@@ -1,0 +1,166 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: rgb(217, 45, 45);
+}
+
+/* Form Section */
+.form {
+    max-width: 500px;
+    display: flex;
+}
+
+
+.form input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #555;
+}
+
+/* Add Button */
+.form button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+/* Clear Button Section */
+.clearbtn {
+    margin-top: 20px;
+}
+
+.clearbtn button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clearbtn button:hover {
+    background-color: darkred;
+}
+
+/* Task List Container */
+.task-list {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Each Task Item */
+.task-item {
+    background: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    gap: 20vw;
+}
+
+/* Hover Effect */
+.task-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Task Text */
+.task-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button Container */
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Common Button Style */
+.task-actions button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* Check Button */
+.check-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.check-btn:hover {
+    background-color: #218838;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: crimson;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Completed Task Style */
+.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+
+.checked{
+    text-decoration: line-through;
+}
+.notChecked{
+    text-decoration: none;
+}
